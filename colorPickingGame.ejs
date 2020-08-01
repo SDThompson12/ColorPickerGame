@@ -1,16 +1,40 @@
-var express = require("express");
-var router = express.Router();
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Color Guessing Game</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/colorGame.css">
+</head>
+<body>
+	<h1> The 
+		<br>
+		<span id="rgbGoal">RGB</span> 
+		<br> 
+		Color Game! 
+	</h1>
 
-//Index Route
-router.get('/', function(request, response)
-	{
-		response.render("../colorPickingGame.ejs");
-	});
+	<div id=stripe>
+		<button id ="reset">New Colors</button>
+		<span id="message"></span>
+		<button class="mode">Easy</button>
+		<button class="selected mode">Hard</button>
+		<button class="mode">Extra Hard</button>
+	<div>
 
-module.exports = router;
+	<div id="container">
+		<div class = "square"></div>
+		<div class = "square"></div>
+		<div class = "square"></div>
+		<div class = "square"></div>
+		<div class = "square"></div>
+		<div class = "square"></div>
+		<div class = "square"></div>
+		<div class = "square"></div>
+		<div class = "square"></div>
+	</div>
 
-if (typeof document !== 'undefined') 
-{
+
+	<script type="text/javascript">
+		
 	//Variables
 	var numOfSquares = 6;
 	var colors = [];
@@ -153,4 +177,8 @@ if (typeof document !== 'undefined')
 		var randomBlue = Math.floor(Math.random() * 256)
 		return "rgb(" + randomRed + ", " + randomGreen + ", " + randomBlue + ")";
 	}
-}
+		
+	</script>
+		
+</body>
+</html>
