@@ -14,7 +14,7 @@ var colorPickerRoute = require('./routes/colorPicker.js');
 //Imports Routes
 app.use("/", colorPickerRoute);
 
-app.listen(3420, function()
+app.listen(process.env.PORT, process.env.IP, function()
 {
     console.log("Starting My Color Picking game...");
 });
