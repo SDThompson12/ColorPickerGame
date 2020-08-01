@@ -4,7 +4,7 @@ var router = express.Router();
 //Index Route
 router.get('/', function(request, response)
 	{
-		response.render("../colorPickingGame.ejs");
+		response.render("./colorPickingGame.ejs");
 	});
 
 module.exports = router;

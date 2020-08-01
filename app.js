@@ -8,7 +8,7 @@ app.use(express.static(__dirname));
 // '__dirname' - Just references to the current directory path Ex) .../workspace/seanjr-personaltests/MyPersonalSite
 
 //Requiring Routes
-var colorPickerRoute = require('./colorPicker.js');
+var colorPickerRoute = require('./routes/colorPicker.js');
 
 
 //Imports Routes
