@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'ST-ColorPickingGame'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_73d81986a4db439984fa4db210f45e32 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cda03e748d8c4028be2e220dfe97a20d }}
         package: .
